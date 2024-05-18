@@ -6,9 +6,9 @@
 ## Introducción
 - **Descripción del Proyecto:** Se pretende crear un buscador geográfico de peticiones, mediante la consulta de las peticiones generadas al área de soporte de TI de una importante cadena de *retail* a nivel latinoamericano. Dichas peticiones esta asociadas a la tienda en la cual se presenta la solicitud; las tiendas están georeferenciadas y se crea una base geográfica con las ubicaciones de las tiendas y los polígonos de las ciudades en las que la cadena de *retail* tiene presencia.
 
-- El usuario, generará la consulta de manera libre en cuanto al servicio de soporte que desea rastrear y seleccionando la zona geográfica para la cual desea hacer la consulta. El retorno a dicha petición será un top 5 de las tiendas con mayor incidencia de la falla o solicitud ingresada en la consulta.
+  El usuario, generará la consulta de manera libre en cuanto al servicio de soporte que desea rastrear y seleccionando la zona geográfica para la cual desea hacer la consulta. El retorno a dicha petición será un top 5 de las tiendas con mayor incidencia de la falla o solicitud ingresada en la consulta.
 
-- Lo anterior permite identificar las fallas más relevantes que se presentan en sopotre de TI de la cadena de *retail* y hacer un uso eficiente de la información de los tickets generados para la optimización de recursos en respuesta a fallas de alta frecuencia en las zonas que desea analizar el usuario.
+  Lo anterior permite identificar las fallas más relevantes que se presentan en sopotre de TI de la cadena de *retail* y hacer un uso eficiente de la información de los tickets generados para la optimización de recursos en respuesta a fallas de alta frecuencia en las zonas que desea analizar el usuario.
   
 - **Contexto:** Antecedentes y contexto en los que se desarrolla el proyecto.
 - **Alcance:** Alcance del proyecto y lo que se espera lograr.
