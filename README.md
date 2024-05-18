@@ -4,7 +4,10 @@
 ---
 
 ## Introducción
-- **Descripción del Proyecto:** Breve descripción del proyecto y su propósito.
+- **Descripción del Proyecto:** Se pretende crear un buscador geográfico de peticiones, mediante la consulta de las peticiones generadas al área de soporte de TI de una importante cadena de *retail* a nivel latinoamericano. Dichas peticiones esta asociadas a la tienda en la cual se presenta la solicitud; las tiendas están georeferenciadas y se crea una base geográfica con las ubicaciones de las tiendas y los polígonos de las (ciudades) en las que la cadena de *retail* tiene presencia.
+
+El usuario, generada la consulta de manera libre en cuanto al servicio de soporte que desea rastrear y seleccionando la zona geográfica.
+  
 - **Contexto:** Antecedentes y contexto en los que se desarrolla el proyecto. oscar
 - **Alcance:** Alcance del proyecto y lo que se espera lograr.
 
