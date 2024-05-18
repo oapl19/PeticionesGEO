@@ -29,7 +29,9 @@
 ![architecture.png](doc/img/architecture.png)
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
-   - python 
+   - python
+   - postgresql
+   - postGIS
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
    - docker
