@@ -29,9 +29,10 @@
 ![architecture.png](doc/img/architecture.png)
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
+   - python 
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
-
+   - docker
 ## Configuración e Instalación
 - **Requisitos Previos:** Herramientas y software necesarios antes de la instalación.
 - **Instrucciones de Instalación:** Pasos detallados para instalar y configurar el proyecto.
