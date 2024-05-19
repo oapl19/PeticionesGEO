@@ -1,25 +1,25 @@
 
 # Documentación del Proyecto
-## Geopeticiones sobre servicios de soporte de TI
+## Geobúsqueda sobre servicios de soporte de TI
 ---
 
 ## Introducción
 - **Descripción del Proyecto:** El presente proyecto tiene como objetivo principal crear un buscador geográfico de incidentes atendidos por las diferentes mesas de soporte de TI de una importante cadena de *retail* a nivel latinoamericano. Dichas peticiones esta asociadas a la tienda en la cual se presenta la solicitud; las tiendas están georeferenciadas y se identifican los polígonos que mejor representan a las ciudades en las que la cadena de *retail* tiene presencia.
 
-- Para lograr este objetivo, se utilizará **PostGIS** como motor de base de datos geográfica, creando tablas que contengan los polígonos de las ciudades donde se encuentran las tiendas.
+  Para lograr este objetivo, se utilizará **PostGIS** como motor de base de datos geográfica, creando tablas que contengan los polígonos de las ciudades donde se encuentran las tiendas.
 
--  Adicionalmente, se empleará el motor de bases de datos vectoriales **Chroma** para procesar las descripciones de cada solicitud, identificando *embeddings* y patrones. Estos patrones serán posteriormente procesados con la ayuda de un modelo lingüistico avanzado (LLM), como **LLaMA** o **Chat-GPT**, con el fin de proporcionar respuestas estructuradas a las consultas de los usuarios.
+  Adicionalmente, se empleará el motor de bases de datos vectoriales **Chroma** para procesar las descripciones de cada solicitud, identificando *embeddings* y patrones. Estos patrones serán posteriormente procesados con la ayuda de un modelo lingüistico avanzado (LLM), como **LLaMA** o **Chat-GPT**, con el fin de proporcionar respuestas estructuradas a las consultas de los usuarios.
 
- - El *front-end* del sistema incluirá un cuadro de diálogo con dos campos: uno de texto para capturar la solicitud del usuario y un desplegable que mostrará un listado de las ciudades donde la cadena de *retail* tiene tiendas u oficinas.
+  El *front-end* del sistema incluirá un cuadro de diálogo con dos campos: uno de texto para capturar la solicitud del usuario y un desplegable que mostrará un listado de las ciudades donde la cadena de *retail* tiene tiendas u oficinas.
 
-- La secuencia de funcionamiento será la siguiente:
+  La secuencia de funcionamiento será la siguiente:
 
 1. **Captura de Consulta**: El usuario ingresa su consulta en un campo de texto y selecciona la localización deseada de un desplegable.
 2. **Filtrado Geográfico**: La consulta se captura en un array de tipo string y se filtran los tickets asociados a la localización especificada. En PostGIS, se realiza el filtrado de todos los tickets que están dentro del área cubierta por el polígono estructurado para la ciudad o ubicación seleccionada.
 3. **Procesamiento de Tickets**: Los tickets ubicados en la zona geográfica seleccionada se envían a Chroma, donde se procesan los embeddings asociados a las palabras de la consulta del usuario para identificar los tickets más relevantes.
 4. **Generación de Respuesta**: Los embeddings más relevantes se pasan al modelo de lenguaje de gran formato, que prepara una respuesta para el usuario. Esta respuesta incluirá un listado de tiendas con mayor frecuencia de solicitudes de soporte en el área seleccionada y una descripción de las solicitudes o fallas mencionadas por el usuario.
 
-- Lo anterior permite identificar las fallas más relevantes que se presentan en sopotre de TI de la cadena de *retail* y hacer un uso eficiente de la información de los tickets generados para la optimización de recursos en respuesta a fallas de alta frecuencia en las zonas que desea analizar el usuario.
+Lo anterior permite identificar las fallas más relevantes que se presentan en sopotre de TI de la cadena de *retail* y hacer un uso eficiente de la información de los tickets generados para la optimización de recursos en respuesta a fallas de alta frecuencia en las zonas que desea analizar el usuario.
   
 - **Contexto:** Antecedentes y contexto en los que se desarrolla el proyecto.
 - **Alcance:** Alcance del proyecto y lo que se espera lograr.
