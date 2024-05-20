@@ -27,6 +27,19 @@ Actualmente, las peticiones de soporte son manejadas por diferentes mesas de ser
 
 - **Alcance:** Alcance del proyecto y lo que se espera lograr.
 
+El proyecto va desde la configuración de la base de datos geográfica hasta la generación de la respuesta al usuario sobre la búsqueda/consulta planteada; para lograr esto, se implementarán las siguientes funcionalidades y tecnologías:
+
+-**Base de Datos Geográfica**: Implementación de PostGIS para crear y gestionar una base de datos que contenga los polígonos de las ciudades donde la cadena de retail tiene presencia, permitiendo georreferenciar cada tienda.
+
+-**Procesamiento de Descripciones de Solicitudes**: Utilización de Chroma para procesar las descripciones de las solicitudes de soporte, identificando patrones mediante embeddings y modelos lingüísticos avanzados como LLaMA o ChatGPT.
+
+-**Interfaz de Usuario**: Desarrollo de una interfaz de usuario intuitiva que incluye un campo de texto para ingresar consultas y un desplegable para seleccionar la ubicación de interés.
+
+-**Filtrado Geográfico de Incidentes**: Creación de un sistema que filtre las solicitudes de soporte en función de la ubicación seleccionada por el usuario, utilizando PostGIS para identificar los tickets dentro de los polígonos correspondientes.
+
+-**Análisis y Respuesta Automatizada**: Integración de un modelo lingüístico que analice los embeddings más relevantes y genere respuestas estructuradas, proporcionando información sobre las tiendas con mayor frecuencia de incidentes y detalles de las solicitudes más comunes.
+
+
 ## Objetivos
 - **Objetivos Generales:** Metas amplias que el proyecto pretende alcanzar.
 - **Objetivos Específicos:** Metas más detalladas y específicas que se deben cumplir para alcanzar los objetivos generales.
@@ -41,12 +54,12 @@ Actualmente, las peticiones de soporte son manejadas por diferentes mesas de ser
 
 ## Descripción de la Arquitectura
 - **Diagramas de Arquitectura:** Diagramas que ilustren la arquitectura del sistema.
-![Arquitectura Tópicos BD.png](doc/img/Arquitectura Tópicos BD.png)
+![Arquitectura_01.png](doc/img/Arquitectura_01.png)
 - **Componentes:** Descripción de los principales componentes del sistema y sus responsabilidades.
 - **Flujo de Datos:** Cómo se mueven los datos a través del sistema.
 ### Arquitectura
 - Estructura general
-![Arquitectura Tópicos BD.png](doc/img/Arquitectura Tópicos BD.png)
+![Arquitectura_01.png](doc/img/Arquitectura_01.png)
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
    - Python
