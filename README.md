@@ -115,18 +115,26 @@ Nivel de confiabilidad y cómo se garantizará:
 - Estructura general
 
 ## Tecnologías Utilizadas
+
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
    - **Python**: Python será el lenguaje de programación central en todas las etapas del desarrollo del proyecto, desde la gestión de la base de datos geográfica y el procesamiento de datos hasta la creación de la interfaz de usuario y la automatización de análisis. 
-   - Postgresql: 
-   - PostGIS
+   - **Mysql**: 
+   - **PostGIS**:
+   - 
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
+  
+  - **``psycopg2``**: Para interactuar con la base de datos *PostgreSQL/PostGIS*. Mediante scripts de Python, se crearán y gestionarán las tablas que contienen los polígonos de las ciudades, permitiendo la georreferenciación de las tiendas.
+  - **`GeoPandas` y `Shapely`**: Facilitarán la manipulación y análisis de datos geográficos, permitiendo filtrar los tickets de soporte en función de la ubicación.
+  - **`transformers` y `sentence-transformers`**: Estas librerías ayudarán a generar y manejar *embeddings*, identificando patrones en los datos de texto.
+  - **`Hugging Face Transformers`**: Utilizando este tipo de librerías, se analizarán los *embeddings* más relevantes y se generarán respuestas estructuradas a las consultas de los usuarios.
+
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
    - Docker
 
 ## Configuración e Instalación
 - **Requisitos Previos:**
 
-  En S.O Windows validar que el servicio WSL exista y esté ejecutandose Docker Desktop.
+  En S.O. Windows validar que el servicio WSL exista y esté ejecutandose Docker Desktop.
 
 - **Instrucciones de Instalación:**
   
