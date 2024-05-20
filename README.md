@@ -39,10 +39,13 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 
   A su vez, el proyecto espera lograr las siguientes mejoras:
 
-  **Optimización de Recursos**: Asignación eficiente de recursos de soporte al identificar las áreas con mayor frecuencia de incidentes.
-  **Mejora en la Respuesta**: Reducción del tiempo de respuesta a las solicitudes de soporte, gracias a un análisis más rápido y preciso de los datos.
-  **Identificación de Patrones**: Detección de problemas recurrentes y tendencias geográficas en las solicitudes de soporte, facilitando la implementación de soluciones proactivas.
-  **Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
+    **Optimización de Recursos**: Asignación eficiente de recursos de soporte al identificar las áreas con mayor frecuencia de incidentes.
+  
+    **Mejora en la Respuesta**: Reducción del tiempo de respuesta a las solicitudes de soporte, gracias a un análisis más rápido y preciso de los datos.
+  
+    **Identificación de Patrones**: Detección de problemas recurrentes y tendencias geográficas en las solicitudes de soporte, facilitando la implementación de soluciones proactivas.
+  
+    **Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
 
 ## Objetivos
 - **Objetivos Generales:** Metas amplias que el proyecto pretende alcanzar.
