@@ -48,8 +48,18 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
     **Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
 
 ## Objetivos
-- **Objetivos Generales:** Metas amplias que el proyecto pretende alcanzar.
-- **Objetivos Específicos:** Metas más detalladas y específicas que se deben cumplir para alcanzar los objetivos generales.
+- **Objetivo General:** Desarrollar un sistema integral de búsqueda geográfica para la gestión y análisis de incidentes de soporte de TI en una cadena de retail en América Latina, con el fin de optimizar la respuesta a las solicitudes de soporte, mejorar la asignación de recursos y aumentar la satisfacción del cliente mediante el uso de tecnologías avanzadas de bases de datos geoespaciales y procesamiento del lenguaje natural.
+
+- **Objetivos Específicos:**
+  1. **Implementar una Base de Datos Geográfica**: Crear y gestionar una base de datos en PostGIS que contenga los polígonos de las ciudades donde la cadena de retail tiene presencia, permitiendo georreferenciar cada tienda para una localización precisa de los incidentes de soporte.
+
+  2. **Desarrollar un Sistema de Filtrado Geográfico**: Implementar un sistema que utilice PostGIS para filtrar las solicitudes de soporte en función de la ubicación seleccionada por el usuario, identificando los tickets dentro de los polígonos correspondientes.
+
+  3. **Procesar Descripciones de Solicitudes de Soporte**: Utilizar el motor de bases de datos vectoriales Chroma para analizar las descripciones de las solicitudes de soporte, identificando embeddings y patrones mediante modelos lingüísticos avanzados como LLaMA o ChatGPT.
+
+  4. **Crear una Interfaz de Usuario Intuitiva**: Desarrollar una interfaz de usuario que incluya un campo de texto para ingresar consultas y un desplegable para seleccionar la ubicación de interés, facilitando la interacción y usabilidad del sistema.
+
+  5. **Generar Respuestas Automatizadas y Estructuradas**: Integrar un modelo lingüístico avanzado que utilice los embeddings más relevantes para generar respuestas estructuradas a las consultas de los usuarios, proporcionando información detallada sobre las tiendas con mayor frecuencia de incidentes y las solicitudes más comunes.
 
 ## Atributos de Calidad
 -**Escalabilidad**
