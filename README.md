@@ -122,10 +122,19 @@ Nivel de confiabilidad y cómo se garantizará:
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
    - Docker
+
 ## Configuración e Instalación
-- **Requisitos Previos:** Herramientas y software necesarios antes de la instalación.
-- **Instrucciones de Instalación:** Pasos detallados para instalar y configurar el proyecto.
-- **Configuración Inicial:** Configuraciones iniciales que deben ser realizadas antes de ejecutar el proyecto.
+- **Requisitos Previos:**
+
+  En S.O Windows validar que el servicio WSL exista y esté ejecutandose Docker Desktop.
+
+- **Instrucciones de Instalación:**
+  
+Una vez instalado Docker Desktop ejecutar las siguientes líneas por consola:
+- **Instalación de base de datos SQL:** docker run --name mysql-container --network cencosud -e MYSQL_ROOT_PASSWORD=javeriana -d mysql
+- **Instalación de base de datos postgis:** docker run --name postgis-container --network cencosud -e POSTGRES_PASSWORD=javeriana -d postgis/postgis
+- **Instalación de base de datos CromaDB:** docker run -d --rm --name chromadb-container -v --network cencosud ./chroma:/chroma/chroma -e IS_PERSISTENT=TRUE -e ANONYMIZED_TELEMETRY=TRUE chromadb/chroma:latest
+- **Instalación Jupyter notebook (Python):** docker run --name jupyter-container --network cencosud -d -p 8888:8888 -p 9999:9999 -v "${12345}/storage":/home/jovyan jupyter/datascience-notebook
 
 ## Uso del Proyecto
 
