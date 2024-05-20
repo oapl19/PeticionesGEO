@@ -226,7 +226,10 @@ boilerplate-database/
 
 ## Instrucciones básicas
 Clona el repositorio.
+Si estas usando sistema operativo windows, valida que el servicio WSL2 este instakado y ejecutandose.
+
 Crea el archivo .env con las variables de entorno necesarias.
+
 Construye y levanta los servicios con Docker Compose:
 
 ```sh
