@@ -157,10 +157,10 @@ Una vez instalado Docker Desktop ejecutar las siguientes líneas por consola:
   
   -*Ejemplo 1: Consulta General de Soporte*
       -Descripción del Problema: "La caja registradora no procesa pagos con tarjeta de crédito en la tienda del centro comercial Pueblo Nuevo."
-      -Ciudad Seleccionada: "Ciudad de México"
+      -Ciudad Seleccionada: "Santiago"
       -Proceso:
         1. Ingresa la descripción del problema en el campo de texto.
-        2. Selecciona "Ciudad de México" en el desplegable.
+        2. Selecciona "Santiago" en el desplegable.
         3. Haz clic en "Buscar".
 
     -*Ejemplo 2: Problema con las Cajas Autoatendidas*
@@ -178,8 +178,8 @@ Una vez instalado Docker Desktop ejecutar las siguientes líneas por consola:
         1. Ingresa la descripción del problema en el campo de texto.
         2. Selecciona "Bogotá" en el desplegable.
         3. Haz clic en "Buscar".
-    El sistema filtrará y procesará los tickets relacionados y generará una respuesta. La respuesta mostrará las tiendas en la ciudad o zona seleccionada con problemas similares y las soluciones aplicadas.
-
+    El sistema filtrará y procesará los tickets relacionados y generará una respuesta. La respuesta mostrará las tiendas en la ciudad o zona seleccionada.
+  
 ## Mantenimiento y Soporte
 - **Guía de Mantenimiento:** Procedimientos y mejores prácticas para mantener el sistema.
 - **Soporte:** Cómo obtener ayuda y soporte para el proyecto.
