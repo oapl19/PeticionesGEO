@@ -62,7 +62,7 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
   5. **Generar Respuestas Automatizadas y Estructuradas**: Integrar un modelo lingüístico avanzado que utilice los embeddings más relevantes para generar respuestas estructuradas a las consultas de los usuarios, proporcionando información detallada sobre las tiendas con mayor frecuencia de incidentes y las solicitudes más comunes.
 
 ## Atributos de Calidad
--**Escalabilidad**
+- **Escalabilidad**
 
 Cómo la arquitectura puede manejar un aumento en la carga de trabajo:
 La arquitectura del proyecto teóricamente está diseñada para ser escalable, permitiendo manejar un aumento en la carga de trabajo de manera eficiente. Esto se logrará mediante las 
@@ -92,18 +92,18 @@ Como la naturaleza del negocio de retail no es directamente a aplicaciones de so
 - **Mantenibilidad**
 
 La mantenibilidad del sistema será garantizada mediante:
-•	Modularidad: Diseño modular de la arquitectura para que los componentes puedan ser actualizados o reemplazados de manera independiente.
-•	Documentación: Creación de una documentación detallada y actualizada del sistema, incluyendo diagramas de arquitectura, guías de desarrollo y manuales de usuario.
-•	Pruebas QA: Implementación de un conjunto completo de pruebas automatizadas (unitarias, de integración y de aceptación) para detectar problemas rápidamente y asegurar la calidad del código.
+-  Modularidad: Diseño modular de la arquitectura para que los componentes puedan ser actualizados o reemplazados de manera independiente.
+-  Documentación: Creación de una documentación detallada y actualizada del sistema, incluyendo diagramas de arquitectura, guías de desarrollo y manuales de usuario.
+-  Pruebas QA: Implementación de un conjunto completo de pruebas automatizadas (unitarias, de integración y de aceptación) para detectar problemas rápidamente y asegurar la calidad del código.
 
 - **Confiabilidad**
 
 Nivel de confiabilidad y cómo se garantizará:
 
-•	Pruebas Exhaustivas: Realización de pruebas exhaustivas en todas las fases del desarrollo para identificar y corregir errores antes del despliegue en producción.
-•	Monitorización Continua: Monitorización continua del sistema para detectar y solucionar problemas antes de que afecten a los usuarios.
-•	Mantenimiento Proactivo: Implementación de prácticas de mantenimiento proactivo para prevenir fallos y mantener el sistema actualizado.
-•	Planes de Contingencia: Desarrollo de planes de contingencia para garantizar la continuidad del servicio en caso de fallos críticos.
+  - Pruebas Exhaustivas: Realización de pruebas exhaustivas en todas las fases del desarrollo para identificar y corregir errores antes del despliegue en producción.
+  - Monitorización Continua: Monitorización continua del sistema para detectar y solucionar problemas antes de que afecten a los usuarios.
+  - Mantenimiento Proactivo: Implementación de prácticas de mantenimiento proactivo para prevenir fallos y mantener el sistema actualizado.
+  - Planes de Contingencia: Desarrollo de planes de contingencia para garantizar la continuidad del servicio en caso de fallos críticos.
 
 
 ## Descripción de la Arquitectura
@@ -116,8 +116,8 @@ Nivel de confiabilidad y cómo se garantizará:
 
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
-   - Python
-   - Postgresql
+   - **Python**: Python será el lenguaje de programación central en todas las etapas del desarrollo del proyecto, desde la gestión de la base de datos geográfica y el procesamiento de datos hasta la creación de la interfaz de usuario y la automatización de análisis. 
+   - Postgresql: 
    - PostGIS
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
