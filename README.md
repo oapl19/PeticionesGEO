@@ -126,8 +126,8 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Soporte:** Cómo obtener ayuda y soporte para el proyecto.
 
 ## Contribuciones
-- **Guía de Contribución:** Cómo otros pueden contribuir al proyecto.
-- **Políticas de Código:** Normas y políticas para contribuir con código al proyecto.
+- **Guía de Contribución:** Las pautas de contribución se encuentran en la raíz del repositorio `\main\CONTRIBUTING`, 
+- **Políticas de Código:** Igualmente las políticas de contribución de código se encuentran en la raíz del repositorio `\main\CONTRIBUTING`.
 
 ## Licencia
 - **Licencia del Proyecto:** el proyecto se distribuye bajo licencia GNU General Public License v3.0. la cual puede consultarse en `main\LICENSE`.
