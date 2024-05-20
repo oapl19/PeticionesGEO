@@ -23,22 +23,26 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
   
 - **Contexto:** En los últimos años, la industria del retail ha experimentado un crecimiento significativo en América Latina, incrementando la complejidad y el volumen de las operaciones de soporte de TI. Las cadenas de retail dependen cada vez más de sistemas tecnológicos avanzados para gestionar sus operaciones diarias, desde la gestión de inventarios hasta la atención al cliente. Una importante cadena de retail latinoamericana ha identificado la necesidad de optimizar su servicio de soporte de TI para responder de manera más eficiente a los incidentes reportados en sus múltiples tiendas distribuidas por la región.
 
-Actualmente, las peticiones de soporte son manejadas por diferentes mesas de servicio, pero la falta de un sistema centralizado que permita visualizar geográficamente los incidentes y analizar patrones de solicitudes dificulta la identificación de problemas recurrentes y la asignación eficiente de recursos. Además, la cadena ha implementado diversas tecnologías innovadoras que requieren un soporte técnico continuo, tales como servicios de abastecimiento, sistemas de venta avanzados, dinámicas de descuentos, cajas autoatendidas y pagos en línea.
+  Actualmente, las peticiones de soporte son manejadas por diferentes mesas de servicio, pero la falta de un sistema centralizado que permita visualizar geográficamente los incidentes y analizar patrones de solicitudes dificulta la identificación de problemas recurrentes y la asignación eficiente de recursos. Además, la cadena ha implementado diversas tecnologías innovadoras que requieren un soporte técnico continuo, tales como servicios de abastecimiento, sistemas de venta avanzados, dinámicas de descuentos, cajas autoatendidas y pagos en línea.
 
-- **Alcance:** Alcance del proyecto y lo que se espera lograr.
+- **Alcance:** El proyecto va desde la configuración de la base de datos geográfica hasta la generación de la respuesta al usuario sobre la búsqueda/consulta planteada; para lograr esto, se implementarán las siguientes funcionalidades y tecnologías:
 
-El proyecto va desde la configuración de la base de datos geográfica hasta la generación de la respuesta al usuario sobre la búsqueda/consulta planteada; para lograr esto, se implementarán las siguientes funcionalidades y tecnologías:
+  **Base de Datos Geográfica**: Implementación de PostGIS para crear y gestionar una base de datos que contenga los polígonos de las ciudades donde la cadena de retail tiene presencia, permitiendo georreferenciar cada tienda.
 
--**Base de Datos Geográfica**: Implementación de PostGIS para crear y gestionar una base de datos que contenga los polígonos de las ciudades donde la cadena de retail tiene presencia, permitiendo georreferenciar cada tienda.
+  **Procesamiento de Descripciones de Solicitudes**: Utilización de Chroma para procesar las descripciones de las solicitudes de soporte, identificando patrones mediante embeddings y modelos lingüísticos avanzados como LLaMA o ChatGPT.
 
--**Procesamiento de Descripciones de Solicitudes**: Utilización de Chroma para procesar las descripciones de las solicitudes de soporte, identificando patrones mediante embeddings y modelos lingüísticos avanzados como LLaMA o ChatGPT.
+  **Interfaz de Usuario**: Desarrollo de una interfaz de usuario intuitiva que incluye un campo de texto para ingresar consultas y un desplegable para seleccionar la ubicación de interés.
 
--**Interfaz de Usuario**: Desarrollo de una interfaz de usuario intuitiva que incluye un campo de texto para ingresar consultas y un desplegable para seleccionar la ubicación de interés.
+  **Filtrado Geográfico de Incidentes**: Creación de un sistema que filtre las solicitudes de soporte en función de la ubicación seleccionada por el usuario, utilizando PostGIS para identificar los tickets dentro de los polígonos correspondientes.
 
--**Filtrado Geográfico de Incidentes**: Creación de un sistema que filtre las solicitudes de soporte en función de la ubicación seleccionada por el usuario, utilizando PostGIS para identificar los tickets dentro de los polígonos correspondientes.
+  **Análisis y Respuesta Automatizada**: Integración de un modelo lingüístico que analice los embeddings más relevantes y genere respuestas estructuradas, proporcionando información sobre las tiendas con mayor frecuencia de incidentes y detalles de las solicitudes más comunes.
 
--**Análisis y Respuesta Automatizada**: Integración de un modelo lingüístico que analice los embeddings más relevantes y genere respuestas estructuradas, proporcionando información sobre las tiendas con mayor frecuencia de incidentes y detalles de las solicitudes más comunes.
+a su vez, el proyecto espera lograr las siguientes mejoras:
 
+-**Optimización de Recursos**: Asignación eficiente de recursos de soporte al identificar las áreas con mayor frecuencia de incidentes.
+-**Mejora en la Respuesta**: Reducción del tiempo de respuesta a las solicitudes de soporte, gracias a un análisis más rápido y preciso de los datos.
+-**Identificación de Patrones**: Detección de problemas recurrentes y tendencias geográficas en las solicitudes de soporte, facilitando la implementación de soluciones proactivas.
+-**Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
 
 ## Objetivos
 - **Objetivos Generales:** Metas amplias que el proyecto pretende alcanzar.
@@ -59,7 +63,7 @@ El proyecto va desde la configuración de la base de datos geográfica hasta la 
 - **Flujo de Datos:** Cómo se mueven los datos a través del sistema.
 ### Arquitectura
 - Estructura general
-![Arquitectura_01.png](doc/img/Arquitectura_01.png)
+
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
    - Python
