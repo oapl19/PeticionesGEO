@@ -52,12 +52,49 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Objetivos Específicos:** Metas más detalladas y específicas que se deben cumplir para alcanzar los objetivos generales.
 
 ## Atributos de Calidad
-- **Escalabilidad:** Cómo la arquitectura puede manejar un aumento en la carga de trabajo.
-- **Rendimiento:** Expectativas de rendimiento y cómo se medirá.
-- **Disponibilidad:** Nivel de disponibilidad requerido y cómo se logrará.
-- **Seguridad:** Medidas de seguridad implementadas para proteger los datos.
-- **Mantenibilidad:** Cómo se asegurará que la arquitectura sea fácil de mantener y actualizar.
-- **Confiabilidad:** Nivel de confiabilidad y cómo se garantizará.
+-**Escalabilidad**
+
+Cómo la arquitectura puede manejar un aumento en la carga de trabajo:
+La arquitectura del proyecto teóricamente está diseñada para ser escalable, permitiendo manejar un aumento en la carga de trabajo de manera eficiente. Esto se logrará mediante las 
+
+siguientes estrategias:
+
+•	Base de Datos Geográfica : La base de datos geográfica está optimizada para manejar grandes volúmenes de datos espaciales. El uso de índices geoespaciales para mejorar el rendimiento de las consultas.
+
+•	Procesamiento de Embeddings : Puede procesar grandes cantidades de datos de texto gracias a su capacidad para paralelizar.
+- **Rendimiento**
+
+Expectativas de rendimiento y cómo se medirá:
+Las expectativas de rendimiento incluyen tiempos de respuesta rápidos para las consultas de los usuarios y una alta tasa de procesamiento de incidentes. Estos serán medidos a través de:
+
+•	Tiempos de Respuesta: El tiempo desde que un usuario envía una consulta hasta que recibe una respuesta debe ser inferior a 5 segundos para la mayoría de las operaciones.
+ La cantidad de consultas procesadas por segundo será monitoreada para asegurar que el sistema pueda manejar múltiples solicitudes concurrentes.
+ 
+- **Disponibilidad**
+Nivel de disponibilidad requerido y cómo se logrará:
+
+Como la naturaleza del negocio de retail no es directamente a aplicaciones de soporte no afectaría la continuidad de negocio directamente es una herramienta que permite a TI tomar decisiones para dar un mejor y eficiente servicio a los usuarios internos, en caso de fallo no afectaría directamente al negocio, sin embargo dentro de TI para poder proveer este servicio de análisis  se contempla 
+
+•	Mecanismos de Recuperación ante Fallos: Implementación de estrategias de failover y recuperación automática para minimizar el tiempo de inactividad.
+
+•	Mantenimiento Programado: Planificación de mantenimientos durante períodos de baja actividad para reducir el impacto en los usuarios.
+
+- **Mantenibilidad**
+
+La mantenibilidad del sistema será garantizada mediante:
+•	Modularidad: Diseño modular de la arquitectura para que los componentes puedan ser actualizados o reemplazados de manera independiente.
+•	Documentación: Creación de una documentación detallada y actualizada del sistema, incluyendo diagramas de arquitectura, guías de desarrollo y manuales de usuario.
+•	Pruebas QA: Implementación de un conjunto completo de pruebas automatizadas (unitarias, de integración y de aceptación) para detectar problemas rápidamente y asegurar la calidad del código.
+
+- **Confiabilidad**
+
+Nivel de confiabilidad y cómo se garantizará:
+
+•	Pruebas Exhaustivas: Realización de pruebas exhaustivas en todas las fases del desarrollo para identificar y corregir errores antes del despliegue en producción.
+•	Monitorización Continua: Monitorización continua del sistema para detectar y solucionar problemas antes de que afecten a los usuarios.
+•	Mantenimiento Proactivo: Implementación de prácticas de mantenimiento proactivo para prevenir fallos y mantener el sistema actualizado.
+•	Planes de Contingencia: Desarrollo de planes de contingencia para garantizar la continuidad del servicio en caso de fallos críticos.
+
 
 ## Descripción de la Arquitectura
 - **Diagramas de Arquitectura:** Diagramas que ilustren la arquitectura del sistema.
