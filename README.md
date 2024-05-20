@@ -72,7 +72,6 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
    - Docker
-   - AWS
 ## Configuración e Instalación
 - **Requisitos Previos:** Herramientas y software necesarios antes de la instalación.
 - **Instrucciones de Instalación:** Pasos detallados para instalar y configurar el proyecto.
@@ -142,7 +141,7 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 ``` 
 boilerplate-database/
 ├── README.md
-├── LICENSE.md
+├── LICENSE
 ├── docker-compose.yml
 ├── db/
 │   ├── postgres/
