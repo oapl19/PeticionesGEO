@@ -21,7 +21,10 @@
 
 Lo anterior permite identificar las fallas más relevantes que se presentan en soporte de TI de la cadena de *retail* y hacer un uso eficiente de la información de los tickets generados para la optimización de recursos en respuesta a fallas de alta frecuencia en las zonas que desea analizar el usuario.
   
-- **Contexto:** Antecedentes y contexto en los que se desarrolla el proyecto.
+- **Contexto:** En los últimos años, la industria del retail ha experimentado un crecimiento significativo en América Latina, incrementando la complejidad y el volumen de las operaciones de soporte de TI. Las cadenas de retail dependen cada vez más de sistemas tecnológicos avanzados para gestionar sus operaciones diarias, desde la gestión de inventarios hasta la atención al cliente. Una importante cadena de retail latinoamericana ha identificado la necesidad de optimizar su servicio de soporte de TI para responder de manera más eficiente a los incidentes reportados en sus múltiples tiendas distribuidas por la región.
+
+Actualmente, las peticiones de soporte son manejadas por diferentes mesas de servicio, pero la falta de un sistema centralizado que permita visualizar geográficamente los incidentes y analizar patrones de solicitudes dificulta la identificación de problemas recurrentes y la asignación eficiente de recursos. Además, la cadena ha implementado diversas tecnologías innovadoras que requieren un soporte técnico continuo, tales como servicios de abastecimiento, sistemas de venta avanzados, dinámicas de descuentos, cajas autoatendidas y pagos en línea.
+
 - **Alcance:** Alcance del proyecto y lo que se espera lograr.
 
 ## Objetivos
@@ -38,19 +41,21 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 
 ## Descripción de la Arquitectura
 - **Diagramas de Arquitectura:** Diagramas que ilustren la arquitectura del sistema.
+![Arquitectura Tópicos BD.png](doc/img/Arquitectura Tópicos BD.png)
 - **Componentes:** Descripción de los principales componentes del sistema y sus responsabilidades.
 - **Flujo de Datos:** Cómo se mueven los datos a través del sistema.
 ### Arquitectura
-- Componentes
-![architecture.png](doc/img/architecture.png)
+- Estructura general
+![Arquitectura Tópicos BD.png](doc/img/Arquitectura Tópicos BD.png)
 ## Tecnologías Utilizadas
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
-   - python
-   - postgresql
-   - postGIS
+   - Python
+   - Postgresql
+   - PostGIS
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
-   - docker
+   - Docker
+   - AWS
 ## Configuración e Instalación
 - **Requisitos Previos:** Herramientas y software necesarios antes de la instalación.
 - **Instrucciones de Instalación:** Pasos detallados para instalar y configurar el proyecto.
