@@ -39,13 +39,10 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 
   A su vez, el proyecto espera lograr las siguientes mejoras:
 
-    **Optimización de Recursos**: Asignación eficiente de recursos de soporte al identificar las áreas con mayor frecuencia de incidentes.
-  
-    **Mejora en la Respuesta**: Reducción del tiempo de respuesta a las solicitudes de soporte, gracias a un análisis más rápido y preciso de los datos.
-  
-    **Identificación de Patrones**: Detección de problemas recurrentes y tendencias geográficas en las solicitudes de soporte, facilitando la implementación de soluciones proactivas.
-  
-    **Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
+  **Optimización de Recursos**: Asignación eficiente de recursos de soporte al identificar las áreas con mayor frecuencia de incidentes.
+  **Mejora en la Respuesta**: Reducción del tiempo de respuesta a las solicitudes de soporte, gracias a un análisis más rápido y preciso de los datos.
+  **Identificación de Patrones**: Detección de problemas recurrentes y tendencias geográficas en las solicitudes de soporte, facilitando la implementación de soluciones proactivas.
+  **Satisfacción del Cliente**: De manera indirecta al optimizar la respuesta ante incidentes frecuentes se espera el aumento en la satisfacción del cliente.
 
 ## Objetivos
 - **Objetivos Generales:** Metas amplias que el proyecto pretende alcanzar.
@@ -76,8 +73,15 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
    - Docker
 ## Configuración e Instalación
-- **Requisitos Previos:** Herramientas y software necesarios antes de la instalación.
-- **Instrucciones de Instalación:** Pasos detallados para instalar y configurar el proyecto.
+- **Requisitos Previos:** 
+En SO Windows validar que el servicio WSL exista y esté ejecutandose
+Docker Desktop 
+- **Instrucciones de Instalación:** 
+Una vez instalado Docker Desktop ejecutar las siguientes líneas por consola:
+- **Instalación de base de datos SQL:** docker run --name mysql-container --network cencosud -e MYSQL_ROOT_PASSWORD=javeriana -d mysql
+- **Instalación de base de datos postgis:** docker run --name postgis-container --network cencosud -e POSTGRES_PASSWORD=javeriana -d postgis/postgis
+- **Instalación de base de datos CromaDB:** docker run -d --rm --name chromadb-container -v --network cencosud ./chroma:/chroma/chroma -e IS_PERSISTENT=TRUE -e ANONYMIZED_TELEMETRY=TRUE chromadb/chroma:latest
+- **Instalación Jupyter notebook (Python):** docker run --name jupyter-container --network cencosud -d -p 8888:8888 -p 9999:9999 -v "${12345}/storage":/home/jovyan jupyter/datascience-notebook
 - **Configuración Inicial:** Configuraciones iniciales que deben ser realizadas antes de ejecutar el proyecto.
 
 ## Uso del Proyecto
