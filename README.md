@@ -142,6 +142,7 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 boilerplate-database/
 ├── README.md
 ├── LICENSE
+├── CONTRIBUTING
 ├── docker-compose.yml
 ├── db/
 │   ├── postgres/
