@@ -96,10 +96,10 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Políticas de Código:** Normas y políticas para contribuir con código al proyecto.
 
 ## Licencia
-- **Licencia del Proyecto:** Detalles sobre la licencia bajo la cual se distribuye el proyecto.
+- **Licencia del Proyecto:** el proyecto se distribuye bajo licencia GNU General Public License v3.0. la cual puede consultarse en `main\LICENSE`.
 
 ## Agradecimientos
-- **Reconocimientos:** Agradecimientos a quienes han contribuido al proyecto.
+- **Reconocimientos:** Agradecemos a.
 
 ---
 
@@ -107,6 +107,7 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 ``` 
 boilerplate-database/
 ├── README.md
+├── LICENSE.md
 ├── docker-compose.yml
 ├── db/
 │   ├── postgres/
