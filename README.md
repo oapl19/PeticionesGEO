@@ -120,8 +120,7 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
         1. Ingresa la descripción del problema en el campo de texto.
         2. Selecciona "Bogotá" en el desplegable.
         3. Haz clic en "Buscar".
-
-      El sistema filtrará y procesará los tickets relacionados y generará una respuesta. La respuesta mostrará las tiendas en la ciudad o zona seleccionada con problemas similares y las soluciones aplicadas.
+    El sistema filtrará y procesará los tickets relacionados y generará una respuesta. La respuesta mostrará las tiendas en la ciudad o zona seleccionada con problemas similares y las soluciones aplicadas.
 
 ## Mantenimiento y Soporte
 - **Guía de Mantenimiento:** Procedimientos y mejores prácticas para mantener el sistema.
