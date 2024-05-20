@@ -79,68 +79,45 @@ Lo anterior permite identificar las fallas más relevantes que se presentan en s
 - **Configuración Inicial:** Configuraciones iniciales que deben ser realizadas antes de ejecutar el proyecto.
 
 ## Uso del Proyecto
-- **Guía de Usuario**
-**Instrucciones sobre cómo usar:**
-Acceso al Sistema
--**Captura de Consulta:**
+
+- **Guía de Usuario:** Instrucciones sobre cómo usar el proyecto.
+  -*Acceso al Sistema*:  Inicia sesión en el sistema utilizando tus credenciales de usuario. Si es tu primera vez, regístrate proporcionando la información requerida y crea una cuenta.
+  -*Captura de Consulta*: En la página principal, encontrarás un campo de texto donde puedes ingresar tu consulta de soporte. Este campo está diseñado para que puedas describir el problema o incidencia de la manera más detallada posible.
+  Justo debajo del campo de texto, verás un desplegable que contiene un listado de las ciudades donde la cadena de retail tiene presencia. Selecciona la ciudad correspondiente al lugar donde se ha presentado el problema.
+  -*Filtrado Geográfico*: Una vez ingresada la consulta y seleccionada la ciudad, haz clic en el botón de "Buscar" o "Enviar".
+  El sistema utilizará PostGIS para filtrar todos los tickets que están dentro del área cubierta por el polígono correspondiente a la ciudad seleccionada.
+  -*Procesamiento de Tickets*: Los tickets ubicados en la zona geográfica seleccionada serán enviados a Chroma, donde se procesarán los embeddings asociados a las palabras de tu consulta.
+  El sistema identificará los tickets más relevantes en función de los patrones detectados en la descripción de tu problema.
+  -*Generación de Respuesta*: Los embeddings más relevantes se pasarán al modelo lingüístico avanzado (como LLaMA o Chat-GPT), que preparará una respuesta estructurada para ti.
+  La respuesta incluirá un listado de tiendas con mayor frecuencia de solicitudes de soporte en el área seleccionada y una descripción de las solicitudes o fallas mencionadas en tu consulta.
+  -*Visualización de Resultados*: La respuesta generada se mostrará en la misma interfaz, permitiéndote ver de manera clara y estructurada la información relevante.
+  Puedes hacer clic en cada resultado para obtener más detalles o realizar nuevas consultas según sea necesario.
   
-En la página principal, encontrarás un campo de texto donde puedes ingresar tu consulta de soporte. Este campo está diseñado para que puedas describir el problema o incidencia de la manera más detallada posible.
+- **Ejemplos de Uso:** A continuación se describen algunos ejemplos prácticos de cómo interactuar con el sistema:
+  -*Ejemplo 1: Consulta General de Soporte*
+      -Descripción del Problema: "La caja registradora no procesa pagos con tarjeta de crédito en la tienda del centro comercial Pueblo Nuevo."
+      -Ciudad Seleccionada: "Ciudad de México"
+      -Proceso:
+        1. Ingresa la descripción del problema en el campo de texto.
+        2. Selecciona "Ciudad de México" en el desplegable.
+        3. Haz clic en "Buscar".
 
-Justo debajo del campo de texto, verás un desplegable que contiene un listado de polígonos geoespaciales  Selecciona e polígono correspondiente al lugar donde se ha presentado el problema.
+    -*Ejemplo 2: Problema con las Cajas Autoatendidas*
+      -Descripción del Problema: "Las cajas autoatendidas no aceptan pagos en efectivo en la tienda de Lima."
+      -Ciudad Seleccionada: "Lima"
+      -Proceso:
+        1. Ingresa la descripción del problema en el campo de texto.
+        2. Selecciona "Lima" en el desplegable.
+        3. Haz clic en "Buscar".
 
--**Filtrado Geográfico:**
-
-Una vez ingresada la consulta, haz clic en el botón de "Buscar" o "Enviar".
-
-El sistema utilizará PostGIS para filtrar todos los tickets que están dentro del área cubierta por el polígono correspondiente a la ciudad seleccionada.
-
--**Procesamiento de Tickets:**
-
-Los tickets ubicados en la zona geográfica seleccionada  se procesarán los embeddings asociados a las palabras de tu consulta.
-El sistema identificará los tickets más relevantes en función de los patrones detectados en la descripción de tu problema.
-
--**Generación de Respuesta:**
-
-Los embeddings más relevantes se pasarán al modelo , que preparará una respuesta estructurada para ti.
-
-**Visualización de Resultados:**
-
-La respuesta generada se mostrará en la misma interfaz, permitiéndote ver de manera clara y estructurada la información relevante.
-
-
-Ejemplos prácticos de cómo interactuar con el sistema:
-
-  -**Ejemplo 1:** Consulta General de Soporte
-
-  **Descripción del Problema:** "La caja registradora no procesa pagos con tarjeta de crédito en la tienda del centro comercial."
-  Ciudad Seleccionada: "Lima"
-  Proceso:
-  Ingresa la descripción del problema en el campo de texto.
-  Selecciona "Lima" en el desplegable.
-  Haz clic en "Buscar".
-  El sistema filtrará y procesará los tickets relacionados y generará una respuesta.
-  La respuesta mostrará las tiendas en Lima con problemas similares y las soluciones aplicadas.
-
-  -**Ejemplo 2:** Problema con las Cajas Autoatendidas
-  
-  **Descripción del Problema:** "Las cajas autoatendidas no aceptan pagos en efectivo en la tienda de Lima."
-  Ciudad Seleccionada: "Lima"
-  Proceso:
-  Ingresa la descripción del problema en el campo de texto.
-  Selecciona "Lima" en el desplegable.
-  Haz clic en "Buscar".
-  El sistema filtrará y procesará los tickets relacionados y generará una respuesta.
-  
-  -**Ejemplo 3:** Fallo en el Sistema de Descuentos
-  
-  **Descripción del Problema:** "El sistema no aplica los descuentos promocionales en la tienda de Bogotá."
-  Ciudad Seleccionada: "Bogotá"
-  Proceso:
-  Ingresa la descripción del problema en el campo de texto.
-  Selecciona "Bogotá" en el desplegable.
-  Haz clic en "Buscar".
-  El sistema filtrará y procesará los tickets relacionados y generará una respuesta.
-  La respuesta mostrará las tiendas en Bogotá con problemas similares y las soluciones aplicadas.
+    -*Ejemplo 3: Fallo en el Sistema de Descuentos*
+      -Descripción del Problema: "El sistema no aplica los descuentos promocionales en la tienda de Bogotá."
+      -Ciudad Seleccionada: "Bogotá"
+      -Proceso:
+        1. Ingresa la descripción del problema en el campo de texto.
+        2. Selecciona "Bogotá" en el desplegable.
+        3. Haz clic en "Buscar".
+El sistema filtrará y procesará los tickets relacionados y generará una respuesta. La respuesta mostrará las tiendas en la ciudad o zona seleccionada con problemas similares y las soluciones aplicadas.
 
 ## Mantenimiento y Soporte
 - **Guía de Mantenimiento:** Procedimientos y mejores prácticas para mantener el sistema.
