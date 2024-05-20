@@ -111,6 +111,7 @@ Nivel de confiabilidad y cómo se garantizará:
 ![Arquitectura_01.png](doc/img/Arquitectura_01.png)
 - **Componentes:** Descripción de los principales componentes del sistema y sus responsabilidades.
 - **Flujo de Datos:** Cómo se mueven los datos a través del sistema.
+
 ### Arquitectura
 - Estructura general
 
@@ -119,18 +120,23 @@ Nivel de confiabilidad y cómo se garantizará:
 - **Lenguajes de Programación:** Lenguajes utilizados en el proyecto.
    - **Python**: Python será el lenguaje de programación central en todas las etapas del desarrollo del proyecto, desde la gestión de la base de datos geográfica y el procesamiento de datos hasta la creación de la interfaz de usuario y la automatización de análisis. 
    - **Mysql**: 
-   - **PostGIS**:
-   - 
+ 
 - **Frameworks y Librerías:** Herramientas y librerías clave utilizadas.
   
   - **``psycopg2``**: Para interactuar con la base de datos *PostgreSQL/PostGIS*. Mediante scripts de Python, se crearán y gestionarán las tablas que contienen los polígonos de las ciudades, permitiendo la georreferenciación de las tiendas.
   - **`GeoPandas` y `Shapely`**: Facilitarán la manipulación y análisis de datos geográficos, permitiendo filtrar los tickets de soporte en función de la ubicación.
   - **`transformers` y `sentence-transformers`**: Estas librerías ayudarán a generar y manejar *embeddings*, identificando patrones en los datos de texto.
   - **`Hugging Face Transformers`**: Utilizando este tipo de librerías, se analizarán los *embeddings* más relevantes y se generarán respuestas estructuradas a las consultas de los usuarios.
+  
+  Además se utilizarán frameworks web como **`Flask`** o **`Django`** para desarrollar la interfaz de usuario. 
 
 - **Plataformas y Servicios:** Plataformas (como bases de datos, servicios en la nube, etc.) que se están utilizando.
-   - Docker
-
+   - **Docker Compose**: Aportará una manera estructurada y eficiente de gestionar y desplegar los servicios necesarios para el proyecto, garantizando consistencia, reproducibilidad y facilidad de escalabilidad. Su capacidad para definir configuraciones en un archivo YAML y ejecutar múltiples contenedores con un solo comando simplificará significativamente el desarrollo, pruebas y despliegue de la aplicación.
+     
+   - **Chroma**: Como base de datos vectorial, Chroma aportará capacidades avanzadas de procesamiento de texto, almacenamiento y consulta de *embeddings*, y búsqueda de similitud vectorial al proyecto. Su integración mejorará significativamente la gestión y análisis de las descripciones de solicitudes de soporte.
+     
+    - **PostGIS**:  PostGIS proporciona las capacidades necesarias para almacenar, gestionar y analizar datos geoespaciales de manera eficiente.
+      
 ## Configuración e Instalación
 - **Requisitos Previos:**
 
